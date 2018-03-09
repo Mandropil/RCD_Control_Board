@@ -1,0 +1,245 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        Passen Sie die Inhaltssicherheitsrichtlinie im META-Tag unten nach Bedarf an. Fügen Sie "default-src" die Option "unsafe-inline" hinzu, um Inline-JavaScript zu aktivieren.
+        Details finden Sie unter "http://go.microsoft.com/fwlink/?LinkID=617521".
+    -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="scripts/jquery-ui-1.12.1.custom/jquery-ui.css">
+    <title>Greg2</title>
+</head>
+<body>
+    <div class="app">
+        <div class="setup hidden" id="page_scan" >
+
+            <div id="scan" class="use">SCAN</div>
+            
+            <div id="send" class="hidden" >SEND</div>
+
+            
+            <div id="devices"></div>
+            <div id="services" class="hidden" >services</div>
+            <div id="output" class="hidden" >output</div>
+            
+        </div>
+
+      
+
+        <div class="setup" id="page_pick" >
+            <div id="paired_pick"></div>
+            
+        </div>
+
+        <div class="setup hidden" id="page_move">
+            <div id="paired_move"></div>
+            
+        </div>
+
+
+        <div id="vitrine_type1" class="vitrine_type1 hidden">
+            
+            <input readonly id="element_101_ring" class="spot_ring pos1 no1" />
+            <input readonly id="element_102_ring" class="spot_ring pos7 no2" />
+            <input readonly id="element_103_ring" class="spot_ring pos35 no3" />
+            <input readonly id="element_104_ring" class="spot_ring pos4 no4" />
+            <input readonly id="element_105_ring" class="spot_ring pos5 no5" />
+            <input readonly id="element_106_ring" class="spot_ring pos6 no6" />
+            <input readonly id="element_107_ring" class="spot_ring pos9 no7" />
+            <input readonly id="element_108_ring" class="spot_ring pos8 no8" />
+            <input readonly id="element_109_ring" class="spot_ring pos115 no9" />
+            <input readonly id="element_110_ring" class="spot_ring pos12 no10" />
+
+
+            
+            <input readonly id="element_100_ring" class="switcher" value="LIGHTS" />
+            <input readonly id="element_100" class="switcher"  value="LIGHTS" />
+            
+
+            <input readonly id="element_101" class="spot pos1 no1"  value="15" />
+            <input readonly id="element_102" class="spot pos7 no2"  value="8" />
+            <input readonly id="element_103" class="spot pos35 no3"  value="11" />
+            <input readonly id="element_104" class="spot pos4 no4"  value="17" />
+            <input readonly id="element_105" class="spot pos5 no5"  value="16" />
+            <input readonly id="element_106" class="spot pos6 no6"  value="18" />
+            <input readonly id="element_107" class="spot pos9 no7"  value="7" />
+            <input readonly id="element_108" class="spot pos8 no8"  value="6" />
+            <input readonly id="element_109" class="spot pos115 no9"  value="1" />
+            <input readonly id="element_110" class="spot pos12 no10" value="5" />
+            
+            
+
+
+
+            <div class="cross" id="closer1" >DO NE</div>
+            
+            
+        </div>
+
+        <div id="vitrine_type2" class="vitrine_type2  hidden">
+            <input readonly id="element_200_ring" class="switcher" value="LIGHTS" />
+            <input readonly id="element_200" class="switcher"  value="LIGHTS" />
+            
+            
+            <input readonly id="element_201_ring" class="spot_ring pos1 no1"/>
+            <input readonly id="element_204_ring" class="spot_ring pos4 no4"/>
+            <input readonly id="element_205_ring" class="spot_ring pos5 no5"/>
+            <input readonly id="element_206_ring" class="spot_ring pos6 no6"/>
+            <input readonly id="element_207_ring" class="spot_ring pos7 no7"/>
+            <input readonly id="element_208_ring" class="spot_ring pos8 no8"/>
+            <input readonly id="element_209_ring" class="spot_ring pos9 no9"/>
+            <input readonly id="element_210_ring" class="spot_ring pos10 no10"/>
+            <input readonly id="element_211_ring" class="spot_ring pos11 no11"/>
+            <input readonly id="element_212_ring" class="spot_ring pos12 no12"/>
+
+            
+            <input readonly id="element_201" class="spot pos1 no1"  value="15" />
+            <input readonly id="element_204" class="spot pos4 no4"  value="17" />
+            <input readonly id="element_205" class="spot pos5 no5"  value="16" />
+            <input readonly id="element_206" class="spot pos6 no6"  value="18" />
+            <input readonly id="element_207" class="spot pos7 no7"  value="8" />
+            <input readonly id="element_208" class="spot pos8 no8"  value="6" />
+            <input readonly id="element_209" class="spot pos9 no9"  value="7" />
+            <input readonly id="element_210" class="spot pos10 no10" value="11" />
+            <input readonly id="element_211" class="spot pos11 no11" value="1" />
+            <input readonly id="element_212" class="spot pos12 no12" value="5" />
+
+            <div class="cross" id="closer2" >DO NE</div>
+            
+
+        </div>
+
+        <div id="vitrine_type3" class="vitrine_type3 hidden">
+            
+            <input readonly id="element_401_ring" class="spot_ring pos50 no1"/>
+            <input readonly id="element_402_ring" class="spot_ring pos51 no4"/>
+            <input readonly id="element_403_ring" class="spot_ring pos52 no1"/>
+            <input readonly id="element_404_ring" class="spot_ring pos53 no4"/>
+            <input readonly id="element_405_ring" class="spot_ring pos54 no1"/>
+
+            <input readonly id="element_406_ring" class="spot_ring left_bar no5"/>
+            <input readonly id="element_407_ring" class="spot_ring right_bar no6"/>
+
+            
+            
+            <input readonly id="element_401" class="spot pos50 no1" value="14" />
+            <input readonly id="element_402" class="spot pos51 no4" value="15" />
+            <input readonly id="element_403" class="spot pos52 no1" value="14" />
+            <input readonly id="element_404" class="spot pos53 no4" value="15" />
+            <input readonly id="element_405" class="spot pos54 no1" value="14" />
+            
+            <input readonly id="element_406" class="spot left_bar no5" value="12" />
+            <input readonly id="element_407" class="spot right_bar no6" value="18" />
+
+            <div class="cross" id="closer4">DO NE</div>
+            
+        </div>
+
+        <div id="vitrine_poles" class="vitrine_poles hidden ">
+            <input readonly id="element_300_ring" class="switcher" value="SPOTS" />
+            <input readonly id="element_300" class="switcher" value="SPOTS" />
+            
+            <input readonly id="element_111_ring" class="spot_ring pos5 pole no1"/>
+            <input readonly id="element_112_ring" class="spot_ring pos6 pole no2"/>
+            <input readonly id="element_113_ring" class="spot_ring pos9 pole no3"/>
+            <input readonly id="element_114_ring" class="spot_ring pos12 pole no4"/>
+
+
+
+            <div class="stange pos1"></div>
+            <input readonly id="element_111" class="spot pos5 pole no1" value="12" />
+            
+            <div class="stange pos4"></div>
+            <input readonly id="element_112" class="spot pos6 pole no2" value="13" />
+            
+            <div class="stange pos7"></div>
+            <input readonly id="element_113" class="spot pos9 pole no3" value="3" />
+            
+            <div class="stange pos8"></div>
+            <input readonly id="element_114" class="spot pos12 pole no4" value="2" />
+
+            <div class="cross" id="closer3" >DO NE</div>
+
+        </div>
+
+        <div class="nav " id="nav_bar">
+            <div id="nav_scan" class="use">SC AN</div>
+            <div id="nav_move" class="use">MO VE</div>
+            <div id="nav_pick" class="use selected_nav">PI CK</div>
+            
+
+        </div>
+
+
+        <div class="slider_container hidden" id="slider_container">
+            <div class="slider_down" id="up">
+                <svg viewBox="0 0 250 200" width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
+
+                    <defs>
+                        <radialGradient id="fill_down" cx="55%" cy="65%" r="30%" fx="50%">
+                            <stop offset="50%" style="stop-color:rgb(255,255,255);stop-opacity:0.8" />
+                            <stop offset="100%" style="stop-color:rgb(255,225,70);stop-opacity:0.8" />
+                        </radialGradient>
+                    </defs>
+
+                    <path d="M 0 200 L 125 0 L 250 200 z" stroke="colourname" fill="url(#fill_down)" />
+
+                </svg>
+            </div>
+            <div class="slider_bg" >
+                <svg viewBox="0 0 800 100" width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
+
+                    <defs>
+                        <linearGradient id="fill" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="50%" style="stop-color:rgb(170,110,0);stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:rgb(240,225,150);stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+
+                    <path d="M 0 50 L 800 0 L 800 100 z" stroke="colourname" fill="url(#fill)" />
+
+                </svg>
+            </div>
+            <div class="slider_up" id="down" >
+                <svg viewBox="0 0 250 200" width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
+
+                    <defs>
+                        <radialGradient id="fill_up" cx="50%" cy="20%" r="50%" fx="50%">
+                            <stop offset="50%" style="stop-color:rgb(175,120,0);stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:rgb(120,90,30);stop-opacity:1" />
+                        </radialGradient>
+                    </defs>
+                    <path d="M 125 200 L 250 0 L 0 0 z" stroke="colourname" fill="url(#fill_up)" />
+
+
+
+                </svg>
+            </div>
+            <input id="slider" class="slider" type="range" min="0" max="255" step="1" />
+        </div>
+
+        <div id="deviceready" class="blink">
+             
+            
+        </div>
+        <div class="logo">Hemmerle</div>
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="scripts/platformOverrides.js"></script>
+    
+    <script type="text/javascript" src="scripts/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.ui.touch-punch.min.js"></script>
+    <script type="text/javascript" src="scripts/bt_functions.js"></script>
+    <script type="text/javascript" src="scripts/bt_basics.js"></script>
+    <script type="text/javascript" src="scripts/location.js"></script>
+    <script type="text/javascript" src="scripts/navigation.js"></script>
+    <script type="text/javascript" src="scripts/index.js"></script>
+</body>
+</html>
