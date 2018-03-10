@@ -10,3 +10,6 @@ Digital pots are used for getting non PWM and thus not pulsing lights.
 
 When the power source is clean, the LEDs are driven wit constand current. 
 
+<b>AD5206</b>
+
+
