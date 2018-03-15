@@ -17,10 +17,11 @@
   int index=0;
   byte temp_val;
   byte check;
-  byte dev_type = 2;
+
+
   
-  
-  String dev_name = "DEV_13";
+  byte dev_type = 3;
+  String dev_name = "Type3_Case2";
   
   
   
@@ -84,14 +85,14 @@
       read_serial();
   
       Serial.println("Init PASS");
-      softSerial.print("AT+PASS123456");
+      softSerial.print("AT+PASS189314");
       read_serial();
   
       Serial.println("Reset");
       softSerial.print("AT+RESET");
       read_serial();
       
-      
+       EEPROM.write(0,43);  
       for (int i = 1;i<19;i++){
         //EEPROM.write(i,0);  
         digitalPotMap(i,10);
@@ -175,8 +176,26 @@
         EEPROM.write(i,pot_data[i]);  
         
       }
-      EEPROM.write(0,43);  
+     
       Serial.println("Gespeichert!");
+    }
+    if (switch1 =='O'){
+      
+      for (int i = 1;i<19;i++){
+        digitalPotMap(i,0);
+      }
+      
+      Serial.println("Aus!");
+    }
+
+    if (switch1 =='N'){
+    
+      for (int i = 1;i<19;i++){
+          temp_val = EEPROM.read(i);  
+          pot_data[i] = temp_val;
+          digitalPotMap(i,temp_val);
+        }
+        Serial.println("An!");
     }
 
     if (switch1 =='T'){
@@ -247,13 +266,13 @@
       digitalPotWrite(2,4,value);
         break;
       case 5:
-      digitalPotWrite(1,3,value);
+      digitalPotWrite(0,3,value);
         break;
       case 6:
       digitalPotWrite(0,1,value);
         break;
       case 7:
-      digitalPotWrite(1,0,value);
+      digitalPotWrite(0,0,value);
         break;
       case 8:
       digitalPotWrite(0,2,value);
@@ -268,7 +287,7 @@
       digitalPotWrite(1,2,value);
         break;
       case 12:
-      digitalPotWrite(0,0,value);
+      digitalPotWrite(1,0,value);
         break;
       case 13:
       digitalPotWrite(1,4,value);
@@ -280,7 +299,7 @@
       digitalPotWrite(1,1,value);
         break;
       case 16:
-      digitalPotWrite(0,3,value);
+      digitalPotWrite(1,3,value);
         break;
       case 17:
       digitalPotWrite(2,5,value);

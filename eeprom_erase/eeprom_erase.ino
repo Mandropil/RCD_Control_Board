@@ -1,8 +1,9 @@
 #include <EEPROM.h>
 
+
 void setup() {
 
-  /*
+  
   EEPROM.write(0,0);  //Initialisiert
   
   EEPROM.write(1,0);
@@ -23,7 +24,7 @@ void setup() {
   EEPROM.write(16,0);
   EEPROM.write(17,0);
   EEPROM.write(18,0);
-  */
+  
   EEPROM.write(19,1);
   EEPROM.write(20,1);
 }

@@ -1,0 +1,98 @@
+Partlist
+
+Exported from GregsBoard1.brd at 01.02.2018 22:38
+
+EAGLE Version 8.6.0 Copyright (c) 1988-2018 Autodesk, Inc.
+
+Assembly variant: 
+
+Part     Value                  Package              Library                Position (mm)         Orientation
+
+C1                              C050-045X075         resistor               (4.5 37.5)            R180
+C2                              C050-045X075         resistor               (35 5)                R90
+C3                              C050-045X075         resistor               (15.5 5)              R270
+C4                              C050-045X075         resistor               (54.5 5)              R270
+C5                              C050-045X075         resistor               (74 5)                R270
+C6                              C050-045X075         resistor               (150 101)             R270
+C7                              C050-045X075         resistor               (111 101.5)           R270
+C8                              C050-045X075         resistor               (92 101.5)            R270
+C9                              C050-045X075         resistor               (73 101)              R90
+C10                             C050-045X075         resistor               (54 101)              R90
+C11                             C050-045X075         resistor               (34.5 101)            R90
+C12                             C050-045X075         resistor               (15.5 101)            R270
+C13                             C050-045X075         resistor               (4.5 57.5)            R180
+C14                             C050-045X075         resistor               (130.5 101.5)         R270
+C15                             C050-045X075         resistor               (112 5)               R270
+C16                             C050-045X075         resistor               (93 5)                R270
+C17                             C050-045X075         resistor               (130.5 5)             R270
+C18                             C050-045X075         resistor               (150 5)               R270
+C19                             0207/7               resistor               (107.25 41)           R270
+C20                             0207/7               resistor               (110.5 38.25)         R270
+C21                             0207/7               resistor               (84.75 46)            R180
+C22                             0207/7               resistor               (84.75 43)            R0
+IC1      RCD-24_MY_DEV          RCD24-DIP            RCD-Custom1            (140.5 86)            R90
+IC2      RCD-24_MY_DEV          RCD24-DIP            RCD-Custom1            (21 42.5)             R180
+IC3      RCD-24_MY_DEV          RCD24-DIP            RCD-Custom1            (40.5 20.5)           R270
+IC4      RCD-24_MY_DEV          RCD24-DIP            RCD-Custom1            (13.5 21)             R270
+IC5      RCD-24_MY_DEV          RCD24-DIP            RCD-Custom1            (55 20.5)             R270
+IC6      RCD-24_MY_DEV          RCD24-DIP            RCD-Custom1            (69.5 20.5)           R270
+IC7      RCD-24_MY_DEV          RCD24-DIP            RCD-Custom1            (12.5 85)             R90
+IC8      RCD-24_MY_DEV          RCD24-DIP            RCD-Custom1            (40 85.75)            R90
+IC9      RCD-24_MY_DEV          RCD24-DIP            RCD-Custom1            (54.5 85.75)          R90
+IC10     RCD-24_MY_DEV          RCD24-DIP            RCD-Custom1            (69 85.75)            R90
+IC11     RCD-24_MY_DEV          RCD24-DIP            RCD-Custom1            (83.5 85.75)          R90
+IC12     RCD-24_MY_DEV          RCD24-DIP            RCD-Custom1            (98 85.75)            R90
+IC13     RCD-24_MY_DEV          RCD24-DIP            RCD-Custom1            (20.5 62.5)           R180
+IC14     RCD-24_MY_DEV          RCD24-DIP            RCD-Custom1            (112.5 85.75)         R90
+IC15     RCD-24_MY_DEV          RCD24-DIP            RCD-Custom1            (140 21)              R270
+IC16     RCD-24_MY_DEV          RCD24-DIP            RCD-Custom1            (113 20.5)            R270
+IC17     RCD-24_MY_DEV          RCD24-DIP            RCD-Custom1            (84 20.5)             R270
+IC18     RCD-24_MY_DEV          RCD24-DIP            RCD-Custom1            (98.5 20.5)           R270
+JP1                             JP2                  jumper                 (35 42.5)             R270
+JP2                             JP2                  jumper                 (43.5 34.5)           R180
+JP3                             JP2                  jumper                 (25 32)               R0
+JP4                             JP2                  jumper                 (58 34.5)             R180
+JP5                             JP2                  jumper                 (72.5 34.5)           R180
+JP6                             JP2                  jumper                 (129 75.5)            R180
+JP7                             JP2                  jumper                 (24 74)               R0
+JP8                             JP2                  jumper                 (43.5 71.5)           R180
+JP9                             JP2                  jumper                 (58 71.5)             R180
+JP10                            JP2                  jumper                 (72.5 71.5)           R180
+JP11                            JP2                  jumper                 (87 71.5)             R180
+JP12                            JP2                  jumper                 (101.5 71.5)          R180
+JP13                            JP2                  jumper                 (35 63)               R90
+JP14                            JP2                  jumper                 (116.5 71.5)          R180
+JP15                            JP2                  jumper                 (128.5 32)            R180
+JP16                            JP2                  jumper                 (116.5 34.5)          R180
+JP17                            JP2                  jumper                 (87 34.5)             R180
+JP18                            JP2                  jumper                 (101.5 34.5)          R180
+LED1                            Q62902-B152          led                    (102.25 45)           R180
+LED2                            Q62902-B152          led                    (112 45)              R180
+SV1                             MA06-1               con-lstb               (74.5 52.75)          R270
+U1       PMIC-LM7805ACT(TO-220) TO-220               PMIC-LM7805ACT_TO-220_ (132.25 54)           R0
+U2       AD5206BRZ100           SOIC127P1032X265-24N AD5206BRZ100           (47.25 59.75)         R270
+U3       A000005                ARDUINO_A000005      A000005                (103 57.25)           R90
+U4       AD5206BRZ100           SOIC127P1032X265-24N AD5206BRZ100           (64.75 53)            R0
+U6       AD5206BRZ100           SOIC127P1032X265-24N AD5206BRZ100           (47.25 46.25)         R270
+X1       MKDSN1,5/2-5,08        MKDSN1,5/2-5,08      con-phoenix-508        (4 47)                R90
+X2       MKDSN1,5/2-5,08        MKDSN1,5/2-5,08      con-phoenix-508        (25.5 4.5)            R180
+X3       MKDSN1,5/2-5,08        MKDSN1,5/2-5,08      con-phoenix-508        (6 4.5)               R180
+X4       MKDSN1,5/2-5,08        MKDSN1,5/2-5,08      con-phoenix-508        (45 4.5)              R180
+X5       MKDSN1,5/2-5,08        MKDSN1,5/2-5,08      con-phoenix-508        (64.5 4.5)            R180
+X6       MKDSN1,5/2-5,08        MKDSN1,5/2-5,08      con-phoenix-508        (6 101.5)             R0
+X7       MKDSN1,5/2-5,08        MKDSN1,5/2-5,08      con-phoenix-508        (25 101.5)            R0
+X8       MKDSN1,5/2-5,08        MKDSN1,5/2-5,08      con-phoenix-508        (44 101.5)            R0
+X9       MKDSN1,5/2-5,08        MKDSN1,5/2-5,08      con-phoenix-508        (63 101.5)            R0
+X10      MKDSN1,5/2-5,08        MKDSN1,5/2-5,08      con-phoenix-508        (82 101.5)            R0
+X11      MKDSN1,5/2-5,08        MKDSN1,5/2-5,08      con-phoenix-508        (101.5 101.5)         R0
+X12      MKDSN1,5/2-5,08        MKDSN1,5/2-5,08      con-phoenix-508        (4.5 67)              R90
+X13      MKDSN1,5/2-5,08        MKDSN1,5/2-5,08      con-phoenix-508        (120.5 101.5)         R0
+X14      MKDSN1,5/2-5,08        MKDSN1,5/2-5,08      con-phoenix-508        (140.5 4.5)           R180
+X15      MKDSN1,5/2-5,08        MKDSN1,5/2-5,08      con-phoenix-508        (121.5 4.5)           R180
+X16      MKDSN1,5/2-5,08        MKDSN1,5/2-5,08      con-phoenix-508        (83.5 4.5)            R180
+X17      MKDSN1,5/2-5,08        MKDSN1,5/2-5,08      con-phoenix-508        (102.5 4.5)           R180
+X18      MINI-USB-32005-301     32005-301            con-cypressindustries  (146.5 43.4)          R180
+X19      MKDSN1,5/2-5,08        MKDSN1,5/2-5,08      con-phoenix-508        (123.25 41.75)        R90
+X24      MKDSN1,5/2-5,08        MKDSN1,5/2-5,08      con-phoenix-508        (149 57)              R270
+X25      MKDSN1,5/2-5,08        MKDSN1,5/2-5,08      con-phoenix-508        (140 101.5)           R0
+X26      MKDSN1,5/2-5,08        MKDSN1,5/2-5,08      con-phoenix-508        (149 67.5)            R270
