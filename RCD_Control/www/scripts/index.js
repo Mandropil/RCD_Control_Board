@@ -49,12 +49,23 @@ var current_name = "";
         set_navigation_switchers();
         set_sliders();
 
-        //addDevice_connected("Test1", "Test1");
-        //addDevice_connected("Test2", "Test2");
+        addDevice_connected("Test1_ASD", "Test1");
+        addDevice_connected("Type3_Case5", "Test2");
 
 
         document.getElementById("scan").onclick = startScan;
         document.getElementById("send").onclick = send_data_raw;
+
+        var fixed = document.getElementById('main_window');
+
+        fixed.addEventListener('touchmove', function (e) {
+
+            e.preventDefault();
+
+        }, false);
+
+       
+
 
     };
 

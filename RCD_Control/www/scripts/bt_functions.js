@@ -93,13 +93,13 @@ function addDevice_connected(name, address) {
 
     var button_pick = document.createElement("div");
     button_pick.id = name + "_pick";
-    button_pick.textContent =  name;
+    button_pick.textContent =  name.replace("_","\r\n");
     button_pick.classList.add("vitrine");
 
 
     var button_move = document.createElement("div");
     button_move.id = name + "_move";
-    button_move.textContent = name;
+    button_move.textContent = name.replace("_", "\r\n");;
     button_move.classList.add("vitrine");
     button_move.classList.add("move");
     

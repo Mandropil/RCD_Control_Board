@@ -24,7 +24,9 @@
 
     });
     function move_slider() {
-
+        var slider_val = document.getElementById("slider").value;
+        var log_val = Math.round(logslider(document.getElementById("slider").value));
+        console.log("VAL " + document.getElementById("slider").value + " Log " + log_val);
         try {
             leds[current_element]['slider'] = "slider";
         }
@@ -33,15 +35,28 @@
             leds[current_element]['slider'] = "slider";
         }
         console.log(leds);
-        leds[current_element]['curval'] = document.getElementById("slider").value;
+        leds[current_element]['curval'] = log_val ;
         console.log(leds);
 
-        send_data(document.getElementById("slider").value);
+        send_data(log_val);
     }
 }
 
 
+function logslider(position) {
+    // position will be between 0 and 100
+    var minp = 1;
+    var maxp = 50;
 
+    // The result should be between 100 an 10000000
+    var minv = Math.log(1);
+    var maxv = Math.log(255);
+
+    // calculate adjustment factor
+    var scale = (maxv - minv) / (maxp - minp);
+
+    return Math.exp(minv + scale * (position - minp));
+}
 
 
 

@@ -5,46 +5,47 @@
 
 @keyframes loading {
     0% {
-        background-color: red;
+        background-size: cover;
+        background-image: url("../images/select.png");
         width: 40vw;
     }
 
     25% {
-        background-color: yellow;
-        
+        background-size: cover;
+        background-image: url("../images/connected.png");
     }
 
     50% {
-        background-color: blue;
-        
+        background-size: cover;
+        background-image: url("../images/lights.png");
     }
 
     75% {
-        background-color: green;
-        
+        background-size: cover;
+        background-image: url("../images/connect_error.png");
     }
 
     100% {
-        background-color: red;
-        
+        background-size: cover;
+        background-image: url("../images/select.png");
     }
 }
 @keyframes connecting {
     from {
-        background-image: none;
-        background-color: #23cd34;
+        background-size: cover;
+        background-image: url("../images/connected.png");
         opacity: 1.0;
     }
 
     50% {
-        background-image: none;
-        background-color: #23cd34;
+        background-size: cover;
+        background-image: url("../images/connected.png");
         opacity: 0.2;
     }
 
     to {
-        background-image: none;
-        background-color: #23cd34;
+        background-size: cover;
+        background-image: url("../images/connected.png");
         opacity: 1.0;
     }
 }
@@ -57,7 +58,7 @@ body {
 	background-attachment:fixed;
     font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
     font-size:12px;
-    height:98%;
+    height:100%;
     margin:0px;
     padding:0px;
     text-transform:uppercase;
@@ -79,8 +80,8 @@ body {
     position: absolute;             
     left: 0%;
     top: 0%;
-    height: 98%;                  
-    width: 99%;                   
+    height: 100%;                  
+    width: 100%;                   
     text-align: center;
     padding: 0px 0px 0px 0px;     
     margin: 0px 0px 0px 0px;
@@ -189,10 +190,11 @@ body {
 
 .vitrine_type1, .vitrine_type2, .vitrine_type3, .vitrine_poles {
     position: absolute;
-    width: 101%;
-    height: 101%;
+    width: 100%;
+    height: 100%;
     left: 0%;
-    background-image: url("../images/kissen1.jpg");
+    background-size: cover;
+    background-image: url("../images/background2.png");
     /*background-image: -webkit-linear-gradient(top, #aaaaaa 0%, #221311 62%);*/
 }
 
@@ -200,12 +202,14 @@ body {
     display: none;
 }
 
-.spot, .switcher,.spot_ring {
+.spot, .switcher, .spot_ring {
     position: absolute;
     height: 18vw;
     border-radius: 55%;
     opacity: 0.9;
-    background-image: radial-gradient(circle at center, white 30% ,#ae9a00);
+    background-image: radial-gradient(circle at center, white 30%,#ae9a00);
+    background-image: url("../images/lights.png");
+    background-size:cover;
     width: 18vw;
     border: 0px;
     margin-left: 5vw;
@@ -215,20 +219,21 @@ body {
 
 .stange {
     position: absolute;
-    margin-left: 11%;
-    margin-top: 7%;
+    margin-left: 11.3%;
+    margin-top: 7.4%;
     width: 5%;
-    height: 10%;
+    height: 11%;
     
     background-image: url("../images/cb1.png");
     border-radius: 30%;
 }
 .active {
-    width:16vw;
-    height:16vw;
-    border:solid #23cd34 1vw;
+    width: 16vw;
+    height: 16vw;
+    border: solid #23cd34 1vw;
     background-image: radial-gradient(circle at center, #ffff99 30%, #ffff00);
-    
+    background-image: url("../images/lights.png");
+    background-size: cover;
 }
 .spot_ring {
     background-color: transparent;
@@ -237,7 +242,6 @@ body {
 
 .switcher {
     font-weight: bold;
-    
     opacity: 1;
     color: #885510;
     font-size: 1vw;
@@ -245,7 +249,8 @@ body {
     text-align: center;
     width: 21vw;
     height: 21vw;
-    background-image: url("../images/rb1.png");
+    background-image: url("../images/select.png");
+    background-size: cover;
     border-radius: 20%;
     position: absolute;
     top: 35vw;
@@ -335,11 +340,12 @@ body {
 
 
 
-.setup,.startup {
+.setup, .startup {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url("../images/kissen1.jpg");
+    background-image: url("../images/background.png");
+    background-size: cover;
 }
 
 .vitrine {
@@ -349,7 +355,8 @@ body {
     width: 20vw;
     height: 20vw;
     font-size: 3vw;
-    background-image: url("../images/cb1.png");
+    vertical-align:middle;
+    background-image: url("../images/vitrine.png");
 }
 
 .connecting {
@@ -359,8 +366,8 @@ body {
 }
 
 .disconnected {
-    background-image: none;
-    background-color: red;
+    background-size:cover;
+    background-image: url("../images/connect_error.png");
     opacity: 0.7;
 }
 
@@ -368,7 +375,7 @@ body {
     border:dashed gray 2px;
 }
 
-.use,.cross {
+.use, .cross {
     color: #737473;
     text-align: center;
     font-family: Century_Regular;
@@ -379,7 +386,11 @@ body {
     width: 17vw;
     line-height: 9vw;
     bottom: 8.7vh;
-    background-image: radial-gradient(circle at center, white 1%,transparent 100%);
+    background-image: radial-gradient(circle at center, #1c70e5 1%,transparent 100%);
+    border-radius: 22%;
+    background-image: radial-gradient(circle at center, orange 10%,transparent);
+    background-size: cover;
+    background-image: url("../images/select.png");
 }
 #nav_scan {
     left:17vw;
@@ -394,7 +405,10 @@ body {
     bottom:27vh;
 }
 .selected_nav {
-    background-image: radial-gradient(circle at center, yellow 10%,transparent);
+    border-radius: 22%;
+    background-image: radial-gradient(circle at center, orange 10%,transparent);
+    background-size: cover;
+    background-image: url("../images/lights.png");
 }
 
 /* ----------------------------------Slider*/
