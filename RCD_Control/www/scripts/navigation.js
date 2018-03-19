@@ -225,7 +225,33 @@ function set_events() { //Eventhandler für Klicken auf Elemente
         
     }
 
+
+    var onner = document.getElementsByClassName('all_on');
+    
+    for (var i = 0; i < onner.length; i++) {
+
+        document.getElementById(onner[i].id).onclick = all_on;
+
+    }
+    var offer = document.getElementsByClassName('all_off');
+    for (var i = 0; i < offer.length; i++) {
+
+        document.getElementById(offer[i].id).onclick = all_off;
+
+    }
+
+
 }
+
+function all_on() {
+    send_data_raw("N20001");
+
+}
+function all_off() {
+    send_data_raw("O20001");
+
+}
+
 
 function hide_parent() {
     this.parentElement.classList.add('hidden');

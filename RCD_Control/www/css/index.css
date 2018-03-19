@@ -204,14 +204,15 @@ body {
 
 .spot, .switcher, .spot_ring {
     position: absolute;
-    height: 18vw;
+    height: 16vw;
     border-radius: 55%;
     opacity: 0.9;
-    background-image: radial-gradient(circle at center, white 30%,#ae9a00);
     background-image: url("../images/lights.png");
-    background-size:cover;
-    width: 18vw;
+    background-image: radial-gradient(circle at center, white 30%,#ae9a00);
+    background-size: cover;
+    width: 16vw;
     border: 0px;
+    border: solid #0c5470 1vw;
     margin-left: 5vw;
     margin-top: 2vw;
 }
@@ -231,8 +232,8 @@ body {
     width: 16vw;
     height: 16vw;
     border: solid #23cd34 1vw;
-    background-image: radial-gradient(circle at center, #ffff99 30%, #ffff00);
     background-image: url("../images/lights.png");
+    background-image: radial-gradient(circle at center, #ffff99 30%, #ffff00);
     background-size: cover;
 }
 .spot_ring {
@@ -375,7 +376,7 @@ body {
     border:dashed gray 2px;
 }
 
-.use, .cross {
+.use, .cross,.all_on,.all_off {
     color: #737473;
     text-align: center;
     font-family: Century_Regular;
@@ -383,7 +384,7 @@ body {
     left: 42vw;
     bottom: 26vh;
     font-size: 10vw;
-    width: 17vw;
+    width: 1.8em;
     line-height: 9vw;
     bottom: 8.7vh;
     background-image: radial-gradient(circle at center, #1c70e5 1%,transparent 100%);
@@ -392,16 +393,16 @@ body {
     background-size: cover;
     background-image: url("../images/select.png");
 }
-#nav_scan {
+#nav_scan,.all_off {
     left:17vw;
 }
 #nav_move {
     left: 42vw;
 }
-#nav_pick {
+#nav_pick,.all_on {
     left: 67vw;
 }
-.cross {
+.cross,.all_on,.all_off {
     bottom:27vh;
 }
 .selected_nav {
