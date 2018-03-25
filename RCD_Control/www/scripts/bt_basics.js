@@ -36,6 +36,7 @@ function handleError(error) {
             errorItems.push("characteristic: " + (uuids[error.characteristic] || error.characteristic));
         }
         msg = "Error on " + error.error + ": " + error.message + (errorItems.length && (" (" + errorItems.join(", ") + ")"));
+        //bluetoothle.close();
     }
     else {
         msg = error;

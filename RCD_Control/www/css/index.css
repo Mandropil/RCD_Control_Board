@@ -383,9 +383,11 @@ body {
     position: absolute;
     left: 42vw;
     bottom: 26vh;
+    padding-top:0.1em;
     font-size: 10vw;
-    width: 1.8em;
-    line-height: 9vw;
+    width: 1.9em;
+    line-height: 8.7vw;
+    height:1.9em;
     bottom: 8.7vh;
     background-image: radial-gradient(circle at center, #1c70e5 1%,transparent 100%);
     border-radius: 22%;
@@ -393,13 +395,16 @@ body {
     background-size: cover;
     background-image: url("../images/select.png");
 }
-#nav_scan,.all_off {
+#nav_scan,.all_off,.nav_cont {
     left:17vw;
 }
 #nav_move {
-    left: 42vw;
+    left: 28vw;
 }
-#nav_pick,.all_on {
+#nav_pick {
+    left: 51vw;
+}
+.all_on {
     left: 67vw;
 }
 .cross,.all_on,.all_off {

@@ -20,8 +20,8 @@
 
 
   
-  byte dev_type = 3;
-  String dev_name = "Type3_Case2";
+  byte dev_type = 2;
+  String dev_name = "Type2_Case4";
   
   
   
@@ -41,8 +41,8 @@
   
     
     
-    if (check > 42){
-    //if (false){
+    //if (check > 42){
+    if (false){
         dev_type = EEPROM.read(20);
     
       for (int i = 1;i<19;i++){
@@ -55,7 +55,7 @@
     }
     else {
       EEPROM.write(20,dev_type);  
-      softSerial.begin(9600); // Verbindung zu HM-10 0=9600 2=38400 4=115200  5=4800
+      softSerial.begin(115200); // Verbindung zu HM-10 0=9600 2=38400 4=115200  5=4800
       Serial.println("Init start");
       softSerial.print("AT");
       read_serial();
@@ -124,7 +124,7 @@
           
        }
   
-      
+        
       
     }
   

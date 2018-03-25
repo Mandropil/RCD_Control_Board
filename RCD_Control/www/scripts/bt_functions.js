@@ -2,13 +2,8 @@
 
     console.log("Starting scan for devices...", "status");
     var scanbutton = document.getElementById("scan");
-
-    
     scanbutton.innerHTML = ('Stop');
-
     scanbutton.classList.add("scanning");
-    
-
     document.getElementById("devices").innerHTML = "";
     
         
