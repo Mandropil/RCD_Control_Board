@@ -350,18 +350,6 @@ body {
     background-size: cover;
 }
 
-.vitrine {
-    font-family: Century_Regular;
-    position:absolute;
-    border-radius: 20%;
-    width: 20vw;
-    height: 20vw;
-    font-size: 3em;
-    color:gray;
-    vertical-align:middle;
-    background-image: url("../images/vitrine.png");
-}
-
 .connecting {
     animation-name: connecting;
     animation-duration: 3s;
@@ -374,11 +362,8 @@ body {
     opacity: 0.7;
 }
 
-.move {
-    border:dashed gray 2px;
-}
 
-.use, .cross,.all_on,.all_off {
+.use, .cross,.all_on,.all_off,.vitrine {
     color: #737473;
     text-align: center;
     font-family: Century_Regular;
@@ -397,6 +382,37 @@ body {
     background-size: cover;
     background-image: url("../images/select.png");
 }
+
+.vitrine {
+    padding-top:0.2em;
+    padding-left:0.1em;
+    bottom:unset;
+    left:unset;
+    background-image: url("../images/vitrine.png");
+}
+
+.type1, .type2, .type3 {
+    border: solid brown 0.2em;
+    border-style:outset;
+    border-bottom-color: lightblue;
+}
+.type1 {
+    border-top-color: lightblue;
+}
+.type2 {
+    border-left-color: lightblue;
+    border-right-color: lightblue;
+}
+.type3 {
+    height:1.1em;
+}
+
+.move {
+    border: dashed gray 2px;
+}
+
+
+
 #nav_scan,.all_off,.nav_cont {
     left:17vw;
 }

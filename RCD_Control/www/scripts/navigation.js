@@ -34,9 +34,12 @@
             leds[current_element] = {};
             leds[current_element]['slider'] = "slider";
         }
-        console.log(leds);
+        
         leds[current_element]['curval'] = log_val ;
-        console.log(leds);
+        
+        console.log("Slider: "  + slider_val);
+        console.log("Skaliert: " + log_val);
+        console.log("Leds: " + leds);
 
         send_data(log_val);
     }

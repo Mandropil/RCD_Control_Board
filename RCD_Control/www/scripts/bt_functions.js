@@ -86,23 +86,35 @@ function addDevice_connected(name, address) {  // Add the item and the graphical
 
     if (document.getElementById(name + "_pick")) return;
 
+
+    var type = name.split("_")[0].replace(/type/gi, "");
+
+
     var button_pick = document.createElement("div");
     button_pick.id = name + "_pick";
     button_pick.classList.add("vitrine");
+    button_pick.classList.add("type" + type);
 
 
     var button_move = document.createElement("div");
     button_move.id = name + "_move";
     button_move.classList.add("vitrine");
     button_move.classList.add("move");
+    button_move.classList.add("type" + type);
 
     console.log(name);
-    var box_text = name.replace("Type", " ");
-    box_text = box_text.replace("Case", " ");
-    box_text = box_text.replace("_", "\r\n");
+    var box_text = name.replace(/type/gi, "");
+    box_text = box_text.replace(/case/gi, "");
+    if (type == "3") {
+        box_text = box_text.replace("_", "&nbsp;");
+    }
+    else {
+        box_text = box_text.replace("_", "&nbsp;&nbsp;\r\n&nbsp;");
+    }
+    
     console.log(box_text);
-    button_move.textContent = box_text;
-    button_pick.textContent = box_text;
+    button_move.innerHTML = box_text;
+    button_pick.innerHTML = box_text;
 
 
     var myElem = document.getElementById(name);
