@@ -195,6 +195,7 @@ body {
     left: 0%;
     background-size: cover;
     background-image: url("../images/background2.png");
+    
     /*background-image: -webkit-linear-gradient(top, #aaaaaa 0%, #221311 62%);*/
 }
 
@@ -355,7 +356,8 @@ body {
     border-radius: 20%;
     width: 20vw;
     height: 20vw;
-    font-size: 3vw;
+    font-size: 3em;
+    color:gray;
     vertical-align:middle;
     background-image: url("../images/vitrine.png");
 }
