@@ -49,9 +49,9 @@ var current_name = "";
         set_navigation_switchers();
         set_sliders();
 
-        addDevice_connected("Type1_Case3", "Test1");
-        addDevice_connected("Type2_Case3", "Test2");
-        addDevice_connected("Type3_Case5", "Test3");
+        //addDevice_connected("Type1_Case3", "Test1");
+        //addDevice_connected("Type2_Case3", "Test2");
+        //addDevice_connected("Type3_Case5", "Test3");
 
 
         document.getElementById("scan").onclick = startScan;
